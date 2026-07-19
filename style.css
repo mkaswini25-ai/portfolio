@@ -416,3 +416,33 @@
                                                                                 .dark-mode footer {
                                                                                     background: #000;
                                                                                 }
+                                                                                
+                                                                                .project-card,
+                                                                                .education-card,
+                                                                                .certificate-card,
+                                                                                .internship-card {
+                                                                                    background: #fff;
+                                                                                    color: #222;
+                                                                                }
+                                                                                
+                                                                                .project-card h3,
+                                                                                .education-card h3,
+                                                                                .certificate-card h3,
+                                                                                .internship-card h3 {
+                                                                                    color: #222;
+                                                                                }
+                                                                                
+                                                                                .project-card p,
+                                                                                .education-card p,
+                                                                                .certificate-card p,
+                                                                                .internship-card p {
+                                                                                    color: #555;
+                                                                                }
+                                                                                
+                                                                                body.dark-mode .project-card,
+                                                                                body.dark-mode .education-card,
+                                                                                body.dark-mode .certificate-card,
+                                                                                body.dark-mode .internship-card {
+                                                                                    background: #1f2937;
+                                                                                    color: black;
+                                                                                }
