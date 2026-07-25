@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("di6_2cUqgT-wWDCrJ");
+    })();
+</script>
 
 <body>
     <div id="loader">
@@ -42,7 +48,7 @@
     </nav>
     <section id="hero" class="hero">
         <div class="hero-text">
-            <h1 id="typing "></h1>
+            <h1 id="typing"></h1>
             <h2>Artificial Intelligence & Data Science Student</h2>
             <p>Passionate about Web Development, UI/UX Design, and Cybersecurity.</p>
             <a href="Resume.pdf" download class="btn">Download Resume</a>
@@ -172,15 +178,15 @@
         <p>
             <a href="https://www.linkedin.com/in/aswini-m-k-8ba09330a" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a>
         </p>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+        <form id="contact-form" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
     <script src="script.js"></script>
-    <button id="topBt" onclick="topFunction()">⬆️</button>
+    <button id="topBtn" onclick="topFunction()">⬆️</button>
     <footer>
         <p>© 2026 Aswini M K | All Rights Reserved.</p>
     </footer>

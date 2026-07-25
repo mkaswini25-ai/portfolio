@@ -122,3 +122,30 @@ window.addEventListener("load", function() {
     }, 1500);
 
 });
+// ================= EmailJS =================
+
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_xg30nkr",
+        "template_6tr03i7",
+        this
+    ).then(function() {
+
+        alert("Message Sent Successfully ✅");
+
+        contactForm.reset();
+
+    }).catch(function(error) {
+
+        alert("Failed ❌");
+
+        console.log(error);
+
+    });
+
+});
