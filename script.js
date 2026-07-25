@@ -132,20 +132,23 @@ contactForm.addEventListener("submit", function(e) {
     e.preventDefault();
 
     emailjs.sendForm(
-        "service_zykm4u8",
-        "template_6tr03i7",
-        this
-    ).then(function() {
+            "service_zykm4u8",
+            "template_6tr03i7",
+            this,
+            "di6_2cUqgT-wWDCrJ"
+        )
+        .then(() => {
 
-        alert("Message Sent Successfully ✅");
+            alert("Message Sent Successfully ✅");
 
-        contactForm.reset();
+            contactForm.reset();
 
-    }).catch(function(error) {
+        })
+        .catch((error) => {
 
-        console.log("ERROR:", error);
+            console.log(error);
 
-        alert(error.text || JSON.stringify(error));
+            alert(JSON.stringify(error));
 
-    });
+        });
 });
