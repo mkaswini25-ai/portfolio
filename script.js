@@ -124,6 +124,7 @@ window.addEventListener("load", function() {
 });
 // ================= EmailJS =================
 
+emailjs.init("di6_2cUqgT-wWDCrJ");
 const contactForm = document.getElementById("contact-form");
 
 contactForm.addEventListener("submit", function(e) {
