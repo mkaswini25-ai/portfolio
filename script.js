@@ -132,7 +132,7 @@ contactForm.addEventListener("submit", function(e) {
     e.preventDefault();
 
     emailjs.sendForm(
-        "service_xg30nkr",
+        "service_zykm4u8",
         "template_6tr03i7",
         this
     ).then(function() {
