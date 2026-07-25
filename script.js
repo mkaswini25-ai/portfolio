@@ -129,25 +129,23 @@ const contactForm = document.getElementById("contact-form");
 
 contactForm.addEventListener("submit", function(e) {
 
-e.preventDefault();
+    e.preventDefault();
 
-emailjs.sendForm(
-    "service_xg30nkr",
-    "template_6tr03i7",
-    this
-).then(function() {
+    emailjs.sendForm(
+        "service_xg30nkr",
+        "template_6tr03i7",
+        this
+    ).then(function() {
 
-    alert("Message Sent Successfully ✅");
+        alert("Message Sent Successfully ✅");
 
-    contactForm.reset();
+        contactForm.reset();
 
-}).catch(function(error) {
+    }).catch(function(error) {
 
-    console.log("ERROR:", error);
+        console.log("ERROR:", error);
 
-    alert(error.text || JSON.stringify(error));
+        alert(error.text || JSON.stringify(error));
 
-});
-});
-
+    });
 });
