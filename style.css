@@ -1,448 +1,707 @@
-                                                                                html {
-                                                                                    scroll-behavior: smooth;
-                                                                                }
-                                                                                
-                                                                                * {
-                                                                                    margin: 0;
-                                                                                    padding: 0;
-                                                                                    box-sizing: border-box;
-                                                                                }
-                                                                                
-                                                                                body {
-                                                                                    font-family: Arial, sans-serif;
-                                                                                }
-                                                                                
-                                                                                nav {
-                                                                                    display: flex;
-                                                                                    justify-content: space-between;
-                                                                                    align-items: center;
-                                                                                    padding: 20px 50px;
-                                                                                    background-color: #1f2937;
-                                                                                }
-                                                                                
-                                                                                nav h2 {
-                                                                                    color: white;
-                                                                                }
-                                                                                
-                                                                                nav ul {
-                                                                                    display: flex;
-                                                                                    list-style: none;
-                                                                                }
-                                                                                
-                                                                                nav ul {
-                                                                                    margin-left: 20px;
-                                                                                    display: flex;
-                                                                                    list-style: none;
-                                                                                    gap: 25px;
-                                                                                }
-                                                                                
-                                                                                nav ul li a {
-                                                                                    text-decoration: none;
-                                                                                    color: white;
-                                                                                    font-weight: bold;
-                                                                                }
-                                                                                
-                                                                                nav ul li a:hover {
-                                                                                    color: #38bdf8;
-                                                                                }
-                                                                                
-                                                                                .hero {
-                                                                                    display: flex;
-                                                                                    justify-content: space-between;
-                                                                                    align-items: center;
-                                                                                    padding: 80px 50px;
-                                                                                    gap: 50px;
-                                                                                }
-                                                                                
-                                                                                .hero {
-                                                                                    width: 55%;
-                                                                                }
-                                                                                
-                                                                                .hero-text h1 {
-                                                                                    font-size: 45px;
-                                                                                    margin-bottom: 15px;
-                                                                                }
-                                                                                
-                                                                                .hero-text h2 {
-                                                                                    color: #2563eb;
-                                                                                    margin-bottom: 15px;
-                                                                                }
-                                                                                
-                                                                                .hero-text p {
-                                                                                    margin-bottom: 25px;
-                                                                                    line-height: 1.6;
-                                                                                }
-                                                                                
-                                                                                .btn {
-                                                                                    background-color: #2563eb;
-                                                                                    color: white;
-                                                                                    text-decoration: none;
-                                                                                    padding: 12px 25px;
-                                                                                    border-radius: 8px;
-                                                                                }
-                                                                                
-                                                                                .btn:hover {
-                                                                                    background-color: #1d4ed8;
-                                                                                }
-                                                                                
-                                                                                .hero-image img {
-                                                                                    width: 350px;
-                                                                                    height: 350px;
-                                                                                    border-radius: 50%;
-                                                                                    object-fit: cover;
-                                                                                }
-                                                                                
-                                                                                .about {
-                                                                                    padding: 60px 50px;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                
-                                                                                .about h2 {
-                                                                                    font-size: 35px;
-                                                                                    margin-bottom: 20px;
-                                                                                    color: #1f2937;
-                                                                                }
-                                                                                
-                                                                                .about p {
-                                                                                    max-width: 800px;
-                                                                                    margin: auto;
-                                                                                    line-height: 1.8;
-                                                                                    font-size: 18px;
-                                                                                    color: #555;
-                                                                                }
-                                                                                
-                                                                                .skills {
-                                                                                    padding: 60px 50px;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                
-                                                                                .skills h2 {
-                                                                                    font-size: 35px;
-                                                                                    margin-bottom: 30px;
-                                                                                }
-                                                                                
-                                                                                .skills-container {
-                                                                                    display: flex;
-                                                                                    flex-wrap: wrap;
-                                                                                    justify-content: center;
-                                                                                    gap: 20px;
-                                                                                }
-                                                                                
-                                                                                .skill-card {
-                                                                                    background: #2563eb;
-                                                                                    color: white;
-                                                                                    padding: 15px 30px;
-                                                                                    border-radius: 10px;
-                                                                                    font-weight: bold;
-                                                                                }
-                                                                                
-                                                                                .skill-card:hover {
-                                                                                    background: #1d4ed8;
-                                                                                    cursor: pointer;
-                                                                                }
-                                                                                
-                                                                                .projects {
-                                                                                    padding: 60px 50px;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                
-                                                                                .projects h2 {
-                                                                                    font-size: 35px;
-                                                                                    margin-bottom: 30px;
-                                                                                }
-                                                                                
-                                                                                .project-container {
-                                                                                    display: flex;
-                                                                                    justify-content: center;
-                                                                                    gap: 20px;
-                                                                                    flex-wrap: wrap;
-                                                                                }
-                                                                                
-                                                                                .project-card {
-                                                                                    width: 300px;
-                                                                                    background: #f4f4f4;
-                                                                                    padding: 20px;
-                                                                                    border-radius: 10px;
-                                                                                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                                                                                }
-                                                                                
-                                                                                .project-card h3 {
-                                                                                    color: #2563eb;
-                                                                                    margin-bottom: 10px;
-                                                                                }
-                                                                                
-                                                                                .project-card:hover {
-                                                                                    transform: translateY(-5px);
-                                                                                    transition: 0.3s;
-                                                                                }
-                                                                                
-                                                                                .education {
-                                                                                    padding: 60px 50px;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                
-                                                                                .education h2 {
-                                                                                    font-size: 35px;
-                                                                                    margin-bottom: 30px;
-                                                                                }
-                                                                                
-                                                                                .education-card {
-                                                                                    max-width: 700px;
-                                                                                    margin: auto;
-                                                                                    background: #f4f4f4;
-                                                                                    padding: 25px;
-                                                                                    border-radius: 10px;
-                                                                                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                                                                                }
-                                                                                
-                                                                                .education-card h3 {
-                                                                                    color: #2563eb;
-                                                                                    margin-bottom: 10px;
-                                                                                }
-                                                                                
-                                                                                .education-card p {
-                                                                                    margin: 8px 0;
-                                                                                }
-                                                                                
-                                                                                .internship {
-                                                                                    padding: 60px 50px;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                
-                                                                                .internship h2 {
-                                                                                    font-size: 35px;
-                                                                                    margin-bottom: 30px;
-                                                                                }
-                                                                                
-                                                                                .internship-card {
-                                                                                    max-width: 700px;
-                                                                                    margin: 20px auto;
-                                                                                    background: #f4f4f4;
-                                                                                    padding: 20px;
-                                                                                    border-radius: 10px;
-                                                                                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                                                                                }
-                                                                                
-                                                                                .internship-card h3 {
-                                                                                    color: #2563eb;
-                                                                                    margin-bottom: 10px;
-                                                                                }
-                                                                                
-                                                                                .certifications {
-                                                                                    padding: 60px 50px;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                
-                                                                                .certifications h2 {
-                                                                                    font-size: 35px;
-                                                                                    margin-bottom: 30px;
-                                                                                }
-                                                                                
-                                                                                .certificate-card {
-                                                                                    max-width: 700px;
-                                                                                    margin: 20px auto;
-                                                                                    background: #f4f4f4;
-                                                                                    padding: 20px;
-                                                                                    border-radius: 10px;
-                                                                                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-                                                                                }
-                                                                                
-                                                                                .certificate-card h3 {
-                                                                                    color: #2563eb;
-                                                                                    margin-bottom: 10px;
-                                                                                }
-                                                                                
-                                                                                .contact {
-                                                                                    padding: 60px 50px;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                
-                                                                                .contact h2 {
-                                                                                    font-size: 35px;
-                                                                                    margin-bottom: 20px;
-                                                                                }
-                                                                                
-                                                                                .contact a {
-                                                                                    text-decoration: none;
-                                                                                    color: #2563eb;
-                                                                                    font-weight: bold;
-                                                                                    margin: 0 10px;
-                                                                                }
-                                                                                
-                                                                                .contact a:hover {
-                                                                                    color: #1d4ed8;
-                                                                                }
-                                                                                
-                                                                                footer {
-                                                                                    background: #1f2937;
-                                                                                    color: white;
-                                                                                    text-align: center;
-                                                                                    padding: 20px;
-                                                                                }
-                                                                                
-                                                                                .active {
-                                                                                    color: #38bdf8 !important;
-                                                                                }
-                                                                                
-                                                                                .project-card {
-                                                                                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                                                                                }
-                                                                                
-                                                                                .project-card:hover {
-                                                                                    transform: translateY(-8px);
-                                                                                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-                                                                                }
-                                                                                
-                                                                                .skillcard {
-                                                                                    transition: transform 0.3s ease;
-                                                                                }
-                                                                                
-                                                                                .skill-card:hover {
-                                                                                    transform: scale(1.08);
-                                                                                }
-                                                                                
-                                                                                .project-card {
-                                                                                    background: white;
-                                                                                    padding: 20px;
-                                                                                    border-radius: 10px;
-                                                                                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-                                                                                    transition: 0.3s ease;
-                                                                                }
-                                                                                
-                                                                                .project-card:hover {
-                                                                                    transform: translateY(-10px);
-                                                                                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-                                                                                }
-                                                                                
-                                                                                #theme-toggle {
-                                                                                    padding: 10px 15px;
-                                                                                    border: none;
-                                                                                    border-radius: 8px;
-                                                                                    cursor: pointer;
-                                                                                    background: #2563eb;
-                                                                                    color: white;
-                                                                                    font-size: 18px;
-                                                                                }
-                                                                                
-                                                                                .dark-mode {
-                                                                                    background: #111827;
-                                                                                    color: white;
-                                                                                }
-                                                                                
-                                                                                .dark-mode nav {
-                                                                                    background: #000;
-                                                                                }
-                                                                                
-                                                                                .dark-mode .about h2 {
-                                                                                    color: white !important;
-                                                                                }
-                                                                                
-                                                                                .dark-mode .project-card .dark-mode .skill-card .dark-mode .certificate-card .dark-mode .internship-card {
-                                                                                    background: #1f2937;
-                                                                                    color: white;
-                                                                                }
-                                                                                
-                                                                                body {
-                                                                                    transition: 0.3s;
-                                                                                }
-                                                                                
-                                                                                body.dark-mode {
-                                                                                    background: #111827;
-                                                                                    color: white;
-                                                                                }
-                                                                                
-                                                                                #progress-bar {
-                                                                                    position: fixed;
-                                                                                    top: 0;
-                                                                                    left: 0;
-                                                                                    width: 0%;
-                                                                                    height: 5px;
-                                                                                    background: #2563eb;
-                                                                                    z-index: 9999;
-                                                                                    transition: width 0.2s ease;
-                                                                                }
-                                                                                
-                                                                                #topBtn {
-                                                                                    display: none;
-                                                                                    position: fixed;
-                                                                                    bottom: 20px;
-                                                                                    right: 20px;
-                                                                                    z-index: 999;
-                                                                                    border: none;
-                                                                                    outline: none;
-                                                                                    background: #2563eb;
-                                                                                    color: white;
-                                                                                    cursor: pointer;
-                                                                                    padding: 15px;
-                                                                                    border-radius: 50%;
-                                                                                    font-size: 18px;
-                                                                                    transition: 0.3s;
-                                                                                }
-                                                                                
-                                                                                #topBtn:hover {
-                                                                                    background: #1e40af;
-                                                                                    transform: scale(1.1);
-                                                                                }
-                                                                                
-                                                                                #typing {
-                                                                                    font-size: 48px;
-                                                                                    font-weight: bold;
-                                                                                    color: #111827;
-                                                                                }
-                                                                                
-                                                                                .dark-mode #typing {
-                                                                                    color: white;
-                                                                                }
-                                                                                
-                                                                                #typing::after {
-                                                                                    content: "|";
-                                                                                    animation: blink o.8s infinite;
-                                                                                }
-                                                                                
-                                                                                @keyframes blink {
-                                                                                    50% {
-                                                                                        opacity: 0;
-                                                                                    }
-                                                                                }
-                                                                                
-                                                                                footer {
-                                                                                    background: #111827;
-                                                                                    color: white;
-                                                                                    text-align: center;
-                                                                                    padding: 20px;
-                                                                                    margin-top: 40px;
-                                                                                }
-                                                                                
-                                                                                .dark-mode footer {
-                                                                                    background: #000;
-                                                                                }
-                                                                                
-                                                                                .project-card,
-                                                                                .education-card,
-                                                                                .certificate-card,
-                                                                                .internship-card {
-                                                                                    background: #fff;
-                                                                                    color: #222;
-                                                                                }
-                                                                                
-                                                                                .project-card h3,
-                                                                                .education-card h3,
-                                                                                .certificate-card h3,
-                                                                                .internship-card h3 {
-                                                                                    color: #222;
-                                                                                }
-                                                                                
-                                                                                .project-card p,
-                                                                                .education-card p,
-                                                                                .certificate-card p,
-                                                                                .internship-card p {
-                                                                                    color: #555;
-                                                                                }
-                                                                                
-                                                                                body.dark-mode .project-card,
-                                                                                body.dark-mode .education-card,
-                                                                                body.dark-mode .certificate-card,
-                                                                                body.dark-mode .internship-card {
-                                                                                    background: #1f2937;
-                                                                                    color: black;
-                                                                                }
+                                                                                        html {
+                                                                                            scroll-behavior: smooth;
+                                                                                        }
+                                                                                        
+                                                                                        * {
+                                                                                            margin: 0;
+                                                                                            padding: 0;
+                                                                                            box-sizing: border-box;
+                                                                                        }
+                                                                                        
+                                                                                        body {
+                                                                                            font-family: Arial, sans-serif;
+                                                                                        }
+                                                                                        
+                                                                                        nav {
+                                                                                            display: flex;
+                                                                                            justify-content: space-between;
+                                                                                            align-items: center;
+                                                                                            padding: 20px 50px;
+                                                                                            background-color: #1f2937;
+                                                                                        }
+                                                                                        
+                                                                                        nav h2 {
+                                                                                            color: white;
+                                                                                        }
+                                                                                        
+                                                                                        nav ul {
+                                                                                            display: flex;
+                                                                                            list-style: none;
+                                                                                        }
+                                                                                        
+                                                                                        nav ul {
+                                                                                            margin-left: 20px;
+                                                                                            display: flex;
+                                                                                            list-style: none;
+                                                                                            gap: 25px;
+                                                                                        }
+                                                                                        
+                                                                                        nav ul li a {
+                                                                                            text-decoration: none;
+                                                                                            color: white;
+                                                                                            font-weight: bold;
+                                                                                        }
+                                                                                        
+                                                                                        nav ul li a:hover {
+                                                                                            color: #38bdf8;
+                                                                                        }
+                                                                                        
+                                                                                        .hero {
+                                                                                            display: flex;
+                                                                                            justify-content: space-between;
+                                                                                            align-items: center;
+                                                                                            padding: 80px 50px;
+                                                                                            gap: 50px;
+                                                                                        }
+                                                                                        
+                                                                                        .hero {
+                                                                                            width: 55%;
+                                                                                        }
+                                                                                        
+                                                                                        .hero-text h1 {
+                                                                                            font-size: 45px;
+                                                                                            margin-bottom: 15px;
+                                                                                        }
+                                                                                        
+                                                                                        .hero-text h2 {
+                                                                                            color: #2563eb;
+                                                                                            margin-bottom: 15px;
+                                                                                        }
+                                                                                        
+                                                                                        .hero-text p {
+                                                                                            margin-bottom: 25px;
+                                                                                            line-height: 1.6;
+                                                                                        }
+                                                                                        
+                                                                                        .btn {
+                                                                                            background-color: #2563eb;
+                                                                                            color: white;
+                                                                                            text-decoration: none;
+                                                                                            padding: 12px 25px;
+                                                                                            border-radius: 8px;
+                                                                                        }
+                                                                                        
+                                                                                        .btn:hover {
+                                                                                            background-color: #1d4ed8;
+                                                                                        }
+                                                                                        
+                                                                                        .hero-image img {
+                                                                                            width: 350px;
+                                                                                            height: 350px;
+                                                                                            border-radius: 50%;
+                                                                                            object-fit: cover;
+                                                                                        }
+                                                                                        
+                                                                                        .about {
+                                                                                            padding: 60px 50px;
+                                                                                            text-align: center;
+                                                                                        }
+                                                                                        
+                                                                                        .about h2 {
+                                                                                            font-size: 35px;
+                                                                                            margin-bottom: 20px;
+                                                                                            color: #1f2937;
+                                                                                        }
+                                                                                        
+                                                                                        .about p {
+                                                                                            max-width: 800px;
+                                                                                            margin: auto;
+                                                                                            line-height: 1.8;
+                                                                                            font-size: 18px;
+                                                                                            color: #555;
+                                                                                        }
+                                                                                        
+                                                                                        .skills {
+                                                                                            padding: 60px 50px;
+                                                                                            text-align: center;
+                                                                                        }
+                                                                                        
+                                                                                        .skills h2 {
+                                                                                            font-size: 35px;
+                                                                                            margin-bottom: 30px;
+                                                                                        }
+                                                                                        
+                                                                                        .skills-container {
+                                                                                            display: flex;
+                                                                                            flex-wrap: wrap;
+                                                                                            justify-content: center;
+                                                                                            gap: 20px;
+                                                                                        }
+                                                                                        
+                                                                                        .skill-card {
+                                                                                            background: #2563eb;
+                                                                                            color: white;
+                                                                                            padding: 15px 30px;
+                                                                                            border-radius: 10px;
+                                                                                            font-weight: bold;
+                                                                                        }
+                                                                                        
+                                                                                        .skill-card:hover {
+                                                                                            background: #1d4ed8;
+                                                                                            cursor: pointer;
+                                                                                        }
+                                                                                        
+                                                                                        .projects {
+                                                                                            padding: 60px 50px;
+                                                                                            text-align: center;
+                                                                                        }
+                                                                                        
+                                                                                        .projects h2 {
+                                                                                            font-size: 35px;
+                                                                                            margin-bottom: 30px;
+                                                                                        }
+                                                                                        
+                                                                                        .project-container {
+                                                                                            display: flex;
+                                                                                            justify-content: center;
+                                                                                            gap: 20px;
+                                                                                            flex-wrap: wrap;
+                                                                                        }
+                                                                                        
+                                                                                        .project-card {
+                                                                                            width: 300px;
+                                                                                            background: #f4f4f4;
+                                                                                            padding: 20px;
+                                                                                            border-radius: 10px;
+                                                                                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                                                                                        }
+                                                                                        
+                                                                                        .project-card h3 {
+                                                                                            color: #2563eb;
+                                                                                            margin-bottom: 10px;
+                                                                                        }
+                                                                                        
+                                                                                        .project-card:hover {
+                                                                                            transform: translateY(-5px);
+                                                                                            transition: 0.3s;
+                                                                                        }
+                                                                                        
+                                                                                        .education {
+                                                                                            padding: 60px 50px;
+                                                                                            text-align: center;
+                                                                                        }
+                                                                                        
+                                                                                        .education h2 {
+                                                                                            font-size: 35px;
+                                                                                            margin-bottom: 30px;
+                                                                                        }
+                                                                                        
+                                                                                        .education-card {
+                                                                                            max-width: 700px;
+                                                                                            margin: auto;
+                                                                                            background: #f4f4f4;
+                                                                                            padding: 25px;
+                                                                                            border-radius: 10px;
+                                                                                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                                                                                        }
+                                                                                        
+                                                                                        .education-card h3 {
+                                                                                            color: #2563eb;
+                                                                                            margin-bottom: 10px;
+                                                                                        }
+                                                                                        
+                                                                                        .education-card p {
+                                                                                            margin: 8px 0;
+                                                                                        }
+                                                                                        
+                                                                                        .internship {
+                                                                                            padding: 60px 50px;
+                                                                                            text-align: center;
+                                                                                        }
+                                                                                        
+                                                                                        .internship h2 {
+                                                                                            font-size: 35px;
+                                                                                            margin-bottom: 30px;
+                                                                                        }
+                                                                                        
+                                                                                        .internship-card {
+                                                                                            max-width: 700px;
+                                                                                            margin: 20px auto;
+                                                                                            background: #f4f4f4;
+                                                                                            padding: 20px;
+                                                                                            border-radius: 10px;
+                                                                                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                                                                                        }
+                                                                                        
+                                                                                        .internship-card h3 {
+                                                                                            color: #2563eb;
+                                                                                            margin-bottom: 10px;
+                                                                                        }
+                                                                                        
+                                                                                        .certifications {
+                                                                                            padding: 60px 50px;
+                                                                                            text-align: center;
+                                                                                        }
+                                                                                        
+                                                                                        .certifications h2 {
+                                                                                            font-size: 35px;
+                                                                                            margin-bottom: 30px;
+                                                                                        }
+                                                                                        
+                                                                                        .certificate-card {
+                                                                                            max-width: 700px;
+                                                                                            margin: 20px auto;
+                                                                                            background: #f4f4f4;
+                                                                                            padding: 20px;
+                                                                                            border-radius: 10px;
+                                                                                            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                                                                                        }
+                                                                                        
+                                                                                        .certificate-card h3 {
+                                                                                            color: #2563eb;
+                                                                                            margin-bottom: 10px;
+                                                                                        }
+                                                                                        
+                                                                                        .contact {
+                                                                                            padding: 60px 50px;
+                                                                                            text-align: center;
+                                                                                        }
+                                                                                        
+                                                                                        .contact h2 {
+                                                                                            font-size: 35px;
+                                                                                            margin-bottom: 20px;
+                                                                                        }
+                                                                                        
+                                                                                        .contact a {
+                                                                                            text-decoration: none;
+                                                                                            color: #2563eb;
+                                                                                            font-weight: bold;
+                                                                                            margin: 0 10px;
+                                                                                        }
+                                                                                        
+                                                                                        .contact a:hover {
+                                                                                            color: #1d4ed8;
+                                                                                        }
+                                                                                        
+                                                                                        footer {
+                                                                                            background: #1f2937;
+                                                                                            color: white;
+                                                                                            text-align: center;
+                                                                                            padding: 20px;
+                                                                                        }
+                                                                                        
+                                                                                        .active {
+                                                                                            color: #38bdf8 !important;
+                                                                                        }
+                                                                                        
+                                                                                        .project-card {
+                                                                                            transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                                                                        }
+                                                                                        
+                                                                                        .project-card:hover {
+                                                                                            transform: translateY(-8px);
+                                                                                            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                                                                                        }
+                                                                                        
+                                                                                        .skillcard {
+                                                                                            transition: transform 0.3s ease;
+                                                                                        }
+                                                                                        
+                                                                                        .skill-card:hover {
+                                                                                            transform: scale(1.08);
+                                                                                        }
+                                                                                        
+                                                                                        .project-card {
+                                                                                            background: white;
+                                                                                            padding: 20px;
+                                                                                            border-radius: 10px;
+                                                                                            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                                                                                            transition: 0.3s ease;
+                                                                                        }
+                                                                                        
+                                                                                        .project-card:hover {
+                                                                                            transform: translateY(-10px);
+                                                                                            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                                                                                        }
+                                                                                        
+                                                                                        #theme-toggle {
+                                                                                            padding: 10px 15px;
+                                                                                            border: none;
+                                                                                            border-radius: 8px;
+                                                                                            cursor: pointer;
+                                                                                            background: #2563eb;
+                                                                                            color: white;
+                                                                                            font-size: 18px;
+                                                                                        }
+                                                                                        
+                                                                                        .dark-mode {
+                                                                                            background: #111827;
+                                                                                            color: white;
+                                                                                        }
+                                                                                        
+                                                                                        .dark-mode nav {
+                                                                                            background: #000;
+                                                                                        }
+                                                                                        
+                                                                                        .dark-mode .about h2 {
+                                                                                            color: white !important;
+                                                                                        }
+                                                                                        
+                                                                                        .dark-mode .project-card,
+                                                                                        .dark-mode .skill-card,
+                                                                                        .dark-mode .certificate-card,
+                                                                                        .dark-mode .internship-card {
+                                                                                            background: #1f2937;
+                                                                                            color: white;
+                                                                                        }
+                                                                                        
+                                                                                        body {
+                                                                                            transition: 0.3s;
+                                                                                        }
+                                                                                        
+                                                                                        body.dark-mode {
+                                                                                            background: #111827;
+                                                                                            color: white;
+                                                                                        }
+                                                                                        
+                                                                                        #progress-bar {
+                                                                                            position: fixed;
+                                                                                            top: 0;
+                                                                                            left: 0;
+                                                                                            width: 0%;
+                                                                                            height: 5px;
+                                                                                            background: #2563eb;
+                                                                                            z-index: 9999;
+                                                                                            transition: width 0.2s ease;
+                                                                                        }
+                                                                                        
+                                                                                        #topBtn {
+                                                                                            display: none;
+                                                                                            position: fixed;
+                                                                                            bottom: 20px;
+                                                                                            right: 20px;
+                                                                                            z-index: 999;
+                                                                                            border: none;
+                                                                                            outline: none;
+                                                                                            background: #2563eb;
+                                                                                            color: white;
+                                                                                            cursor: pointer;
+                                                                                            padding: 15px;
+                                                                                            border-radius: 50%;
+                                                                                            font-size: 18px;
+                                                                                            transition: 0.3s;
+                                                                                        }
+                                                                                        
+                                                                                        #topBtn:hover {
+                                                                                            background: #1e40af;
+                                                                                            transform: scale(1.1);
+                                                                                        }
+                                                                                        
+                                                                                        #typing {
+                                                                                            font-size: 48px;
+                                                                                            font-weight: bold;
+                                                                                            color: #111827;
+                                                                                        }
+                                                                                        
+                                                                                        .dark-mode #typing {
+                                                                                            color: white;
+                                                                                        }
+                                                                                        
+                                                                                        #typing::after {
+                                                                                            content: "|";
+                                                                                            animation: blink 0.8s infinite;
+                                                                                        }
+                                                                                        
+                                                                                        @keyframes blink {
+                                                                                            50% {
+                                                                                                opacity: 0;
+                                                                                            }
+                                                                                        }
+                                                                                        
+                                                                                        footer {
+                                                                                            background: #111827;
+                                                                                            color: white;
+                                                                                            text-align: center;
+                                                                                            padding: 20px;
+                                                                                            margin-top: 40px;
+                                                                                        }
+                                                                                        
+                                                                                        .dark-mode footer {
+                                                                                            background: #000;
+                                                                                        }
+                                                                                        
+                                                                                        .project-card,
+                                                                                        .education-card,
+                                                                                        .certificate-card,
+                                                                                        .internship-card {
+                                                                                            background: #fff;
+                                                                                            color: #222;
+                                                                                        }
+                                                                                        
+                                                                                        .project-card h3,
+                                                                                        .education-card h3,
+                                                                                        .certificate-card h3,
+                                                                                        .internship-card h3 {
+                                                                                            color: #222;
+                                                                                        }
+                                                                                        
+                                                                                        .project-card p,
+                                                                                        .education-card p,
+                                                                                        .certificate-card p,
+                                                                                        .internship-card p {
+                                                                                            color: #555;
+                                                                                        }
+                                                                                        
+                                                                                        body.dark-mode .project-card,
+                                                                                        body.dark-mode .education-card,
+                                                                                        body.dark-mode .certificate-card,
+                                                                                        body.dark-mode .internship-card {
+                                                                                            background: #1f2937;
+                                                                                            color: black;
+                                                                                        }
+                                                                                        /* ===========================Mobile Responsive Design=========================== */
+                                                                                        
+                                                                                        @media (max-width: 768px) {
+                                                                                            nav {
+                                                                                                flex-direction: column;
+                                                                                                padding: 15px;
+                                                                                            }
+                                                                                            nav ul {
+                                                                                                flex-direction: column;
+                                                                                                gap: 10px;
+                                                                                                text-align: center;
+                                                                                                margin-top: 15px;
+                                                                                            }
+                                                                                            .hero {
+                                                                                                flex-direction: column;
+                                                                                                text-align: center;
+                                                                                                padding: 30px 20px;
+                                                                                            }
+                                                                                            .hero-image img {
+                                                                                                width: 220px;
+                                                                                                margin-top: 20px;
+                                                                                            }
+                                                                                            .skills-container,
+                                                                                            .project-container {
+                                                                                                display: flex;
+                                                                                                flex-direction: column;
+                                                                                                gap: 20px;
+                                                                                            }
+                                                                                            .education-card,
+                                                                                            .internship-card,
+                                                                                            .certificate-card,
+                                                                                            .project-card {
+                                                                                                width: 100%;
+                                                                                                box-sizing: border-box;
+                                                                                            }
+                                                                                            h1 {
+                                                                                                font-size: 2rem;
+                                                                                            }
+                                                                                            h2 {
+                                                                                                font-size: 1.5rem;
+                                                                                            }
+                                                                                            p {
+                                                                                                font-size: 16px;
+                                                                                            }
+                                                                                            .btn {
+                                                                                                display: inline-block;
+                                                                                                margin-top: 15px;
+                                                                                            }
+                                                                                            .hero-image img {
+                                                                                                width: 180px;
+                                                                                                height: 180px;
+                                                                                                margin: 20px auto;
+                                                                                                display: block;
+                                                                                            }
+                                                                                            .hero-text {
+                                                                                                text-align: center;
+                                                                                            }
+                                                                                            .hero-text h1 {
+                                                                                                font-size: 2rem;
+                                                                                            }
+                                                                                            .hero-text h2 {
+                                                                                                font-size: 1.2rem;
+                                                                                            }
+                                                                                            .hero-text p {
+                                                                                                font-size: 15px;
+                                                                                            }
+                                                                                            nav h2 {
+                                                                                                margin-bottom: 15px;
+                                                                                            }
+                                                                                        }
+                                                                                        
+                                                                                        .menu-toggle {
+                                                                                            display: none;
+                                                                                            font-size: 30px;
+                                                                                            color: white;
+                                                                                            cursor: pointer;
+                                                                                        }
+                                                                                        
+                                                                                        @media (max-width:768px) {
+                                                                                            nav {
+                                                                                                display: flex;
+                                                                                                justify-content: space-between;
+                                                                                                align-items: center;
+                                                                                                flex-wrap: wrap;
+                                                                                                padding: 15px 20px;
+                                                                                            }
+                                                                                            .menu-toggle {
+                                                                                                display: block;
+                                                                                            }
+                                                                                            #nav-links {
+                                                                                                display: none;
+                                                                                                width: 100%;
+                                                                                                flex-direction: column;
+                                                                                                background: #1f2937;
+                                                                                                margin-top: 15px;
+                                                                                                padding: 10px 0;
+                                                                                            }
+                                                                                            #nav-links.active {
+                                                                                                display: flex;
+                                                                                            }
+                                                                                            #nav-links li {
+                                                                                                list-style: none;
+                                                                                                margin: 10px 0;
+                                                                                                text-align: center;
+                                                                                            }
+                                                                                            #nav-links li a {
+                                                                                                color: white;
+                                                                                                text-decoration: none;
+                                                                                                font-size: 18px;
+                                                                                            }
+                                                                                            .hero {
+                                                                                                flex-direction: column;
+                                                                                                text-align: center;
+                                                                                                padding: 30px 20px;
+                                                                                            }
+                                                                                            .hero-image img {
+                                                                                                width: 200px;
+                                                                                                height: 200px;
+                                                                                            }
+                                                                                        }
+                                                                                        
+                                                                                        .project-btn {
+                                                                                            display: inline-block;
+                                                                                            margin-top: 10px;
+                                                                                            padding: 10px 18px;
+                                                                                            background-color: #2563eb;
+                                                                                            color: white;
+                                                                                            text-decoration: none;
+                                                                                            border-radius: 8px;
+                                                                                            transition: 0.3s;
+                                                                                        }
+                                                                                        
+                                                                                        .project-btn:hover {
+                                                                                            background-color: #1d4ed8;
+                                                                                            transform: scale(1.05);
+                                                                                        }
+                                                                                        
+                                                                                        .contact i {
+                                                                                            color: #2563eb;
+                                                                                            margin-right: 8px;
+                                                                                        }
+                                                                                        
+                                                                                        .contact p {
+                                                                                            margin: 15px 0;
+                                                                                        }
+                                                                                        
+                                                                                        .contact a {
+                                                                                            text-decoration: none;
+                                                                                            font-weight: bold;
+                                                                                        }
+                                                                                        
+                                                                                        .hire-btn {
+                                                                                            margin-left: 15px;
+                                                                                            background: #10b981;
+                                                                                        }
+                                                                                        
+                                                                                        .hire-btn:hover {
+                                                                                            background: #059669;
+                                                                                        }
+                                                                                        
+                                                                                        .contact-form {
+                                                                                            display: flex;
+                                                                                            flex-direction: column;
+                                                                                            gap: 15px;
+                                                                                            max-width: 600px;
+                                                                                            margin: 30px auto;
+                                                                                        }
+                                                                                        
+                                                                                        .contact-form input,
+                                                                                        .contact-form textarea {
+                                                                                            padding: 15px;
+                                                                                            border: 1px solid #ccc;
+                                                                                            border-radius: 10px;
+                                                                                            font-size: 16px;
+                                                                                        }
+                                                                                        
+                                                                                        .contact-form button {
+                                                                                            padding: 15px;
+                                                                                            background: #2563eb;
+                                                                                            color: white;
+                                                                                            border: none;
+                                                                                            border-radius: 10px;
+                                                                                            font-size: 16px;
+                                                                                            cursor: pointer;
+                                                                                            font-size: 16px;
+                                                                                        }
+                                                                                        
+                                                                                        .contact-form button:hover {
+                                                                                            background: #1d4ed8;
+                                                                                        }
+                                                                                        
+                                                                                        .reveal {
+                                                                                            opacity: 0;
+                                                                                            transform: translateY(50px);
+                                                                                            transition: all 0.8s ease;
+                                                                                        }
+                                                                                        
+                                                                                        .reveal.active {
+                                                                                            opacity: 1;
+                                                                                            transform: translateY(0);
+                                                                                        }
+                                                                                        
+                                                                                        #loader {
+                                                                                            position: fixed;
+                                                                                            top: 0;
+                                                                                            left: 0;
+                                                                                            width: 100%;
+                                                                                            height: 100%;
+                                                                                            background: #111827;
+                                                                                            display: flex;
+                                                                                            justify-content: center;
+                                                                                            align-items: center;
+                                                                                            z-index: 99999;
+                                                                                            transition: opacity 0.6s ease;
+                                                                                        }
+                                                                                        
+                                                                                        #loader h1 {
+                                                                                            color: white;
+                                                                                            font-size: 40px;
+                                                                                            animation: pulse 1.2s infinite;
+                                                                                        }
+                                                                                        
+                                                                                        @keyframes pulse {
+                                                                                            0% {
+                                                                                                transform: scale(1);
+                                                                                            }
+                                                                                            50% {
+                                                                                                transform: scale(1.1);
+                                                                                            }
+                                                                                            100% {
+                                                                                                transform: scale(1);
+                                                                                            }
+                                                                                        }
+                                                                                        
+                                                                                        .social-icons {
+                                                                                            margin-top: 25px;
+                                                                                        }
+                                                                                        
+                                                                                        .social-icons a {
+                                                                                            display: inline-block;
+                                                                                            width: 45px;
+                                                                                            height: 45px;
+                                                                                            line-height: 45px;
+                                                                                            text-align: center;
+                                                                                            border-radius: 50%;
+                                                                                            background: #2563eb;
+                                                                                            color: white;
+                                                                                            margin-right: 12px;
+                                                                                            font-size: 20px;
+                                                                                            transition: .3s;
+                                                                                        }
+                                                                                        
+                                                                                        .social-icons a:hover {
+                                                                                            background: #1d4ed8;
+                                                                                            transform: translateY(-5px);
+                                                                                        }
